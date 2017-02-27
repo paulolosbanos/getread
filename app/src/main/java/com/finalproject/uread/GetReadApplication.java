@@ -13,7 +13,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class GetReadApplication extends Application {
 
     public static Retrofit mRetrofit;
-    public final String BASE_URL = "http://192.168.0.101:8082"; //url of firebase app
+    //public final String BASE_URL = "http://192.168.0.101:8082"; //url of firebase app
+    public final String BASE_URL = "http://172.20.10.2:8082"; // hotspot
+
     @Override
     public void onCreate() {
         super.onCreate();

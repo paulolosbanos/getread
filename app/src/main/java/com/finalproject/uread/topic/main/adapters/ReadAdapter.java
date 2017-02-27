@@ -23,6 +23,12 @@ public class ReadAdapter extends RecyclerView.Adapter<ReadAdapter.RAViewHolder> 
         this.readList = readList;
     }
 
+    public void swap(List<Read> datas){
+        readList.clear();
+        readList.addAll(datas);
+        notifyDataSetChanged();
+    }
+
     @Override
     public RAViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())

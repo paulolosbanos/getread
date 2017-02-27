@@ -1,16 +1,24 @@
 package com.finalproject.uread.topic.main.models;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
 /**
  * Created by paulo.losbanos on 10/02/2017.
  */
 
-public class Read {
+public class Read implements Serializable{
 
     private String id;
     private String title;
     private String owner;
-    private String ownerContact;
     private String condition;
+
+    @SerializedName("owner-contact")
+    private String ownerContact;
+
+
 
     public Read(String id, String name, String owner, String ownerContact, String condition) {
         this.id = id;
